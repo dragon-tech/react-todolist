@@ -17,11 +17,15 @@ const TodoList = () => {
 
     setTodos(addedTodo);
   }
-  console.log('todos',todos)
+
+  const [showAdd, setShowAdd] = useState(false);
+  
+  const showAddToggle = () => setShowAdd(!showAdd);
+
   return (
     <Paper>
-        <Header />
-        <TodoForm addTodo={addTodo} />
+        <Header showAddToggle={showAddToggle} />
+        <TodoForm addTodo={addTodo} showAdd={showAdd} />
         <Todos todos={todos} />
     </Paper>
   );
