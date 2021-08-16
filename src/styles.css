@@ -36,6 +36,14 @@
   .main-black-color {
     color: var(--main-black-color);
   }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .align-right {
+    text-align: right;
+  }
   
   .container {
     width: 600px;
@@ -60,13 +68,15 @@
   
   .header-title {
     color: var(--main-black-color);
-    flex: 1;
+    /* flex: 1; */
+    width: 52%;
     text-align: center;
     font-size: 4rem;
     font-family: "Fredoka One", sans-serif;
   }
   
   .header-btn {
+    width: 24%;
     font-size: 2rem;
     cursor: pointer;
     font-family: "Fredoka One", sans-serif;
