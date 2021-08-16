@@ -2,8 +2,6 @@
 //eslint-disable-next-line
 import { jsx, useTheme } from '@emotion/react';
 import PropTypes from "prop-types";
-// import cx from "classnames";
-// import styles from "./button.module.css";
 import * as styles from "./button.styles";
 
 const Button = ({ text, onClick, color, align }) => {
