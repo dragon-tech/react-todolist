@@ -1,0 +1,20 @@
+.todos {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.todoPlaceholderText {
+    font-family: "Fredoka One", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 16px;
+}
+
+.addBtnPlaceholderText {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "Fredoka One", sans-serif;
+    font-weight: 600;
+    color: var(--main-black-color);
+}
