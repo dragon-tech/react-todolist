@@ -1,24 +1,17 @@
 /** @jsxImportSource @emotion/react */
 //eslint-disable-next-line
-import { jsx } from '@emotion/react';
+import { jsx, useTheme } from '@emotion/react';
 import PropTypes from "prop-types";
 // import cx from "classnames";
 // import styles from "./button.module.css";
 import * as styles from "./button.styles";
 
 const Button = ({ text, onClick, color, align }) => {
-    // const classNames = cx(styles.headerBtn, {
-    //     [styles.mainBlackColor] : color === 'black',
-    //     [styles.mainRedColor] : color === 'red',
-    //     [styles.alignLeft] : align === 'left',
-    //     [styles.alignRight] : align === 'right',
-    // });
+
+    const theme = useTheme();
 
     return ( 
-        // <button className={ classNames } onClick={ onClick } > 
-        //     { text } 
-        // </button>
-        <button css={styles.button({ align,color })} onClick={ onClick } > 
+        <button css={styles.button({ align,color,theme })} onClick={ onClick } > 
             { text } 
         </button>
     );

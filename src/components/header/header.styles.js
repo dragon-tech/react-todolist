@@ -6,10 +6,10 @@ export const header = () =>
         align-items: flex-start;
     `;
 
-export const headerTitle = () =>
+export const headerTitle = theme =>
 
     css`
-        color: var(--main-black-color);
+        color: ${theme.color.primary.black};
         width: 52%;
         text-align: center;
         font-size: 4rem;
