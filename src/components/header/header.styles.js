@@ -10,7 +10,6 @@ export const headerTitle = theme =>
 
     css`
         color: ${theme.color.primary.black};
-        width: 52%;
         text-align: center;
         font-size: 4rem;
         font-family: "Fredoka One", sans-serif;

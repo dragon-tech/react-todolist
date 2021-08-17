@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 const Container = ({ children, flexDirection, flexWrap, justifyContent, alignItems, alignContent }) => {
     const containerStyles = css`
         display: flex;
+        width:100%;
         flex-directiom: ${ flexDirection };
         flex-wrap: ${ flexWrap };
         justify-content: ${ justifyContent };
