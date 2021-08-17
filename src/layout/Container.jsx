@@ -3,11 +3,12 @@
 import { jsx, css } from '@emotion/react';
 import PropTypes from 'prop-types';
 
-const Container = ({ children, flexDirection, flexWrap, justifyContent, alignItems, alignContent }) => {
+const Container = ({ children, flexDirection, flexWrap, justifyContent, alignItems, alignContent, height }) => {
     const containerStyles = css`
         display: flex;
         width:100%;
-        flex-directiom: ${ flexDirection };
+        height: ${ height };
+        flex-direction: ${ flexDirection };
         flex-wrap: ${ flexWrap };
         justify-content: ${ justifyContent };
         align-items: ${ alignItems };
@@ -23,7 +24,8 @@ Container.defaultProps = {
     flexWrap: "nowrap",
     justifyContent: "flex-start",
     alignItems: "stretch",
-    alignContent: "stretch"
+    alignContent: "stretch",
+    height:"auto"
 }
 
 Container.propTypes = {
@@ -80,7 +82,8 @@ Container.propTypes = {
         "baseline",
         "first baseline",
         "last baseline"
-    ])
+    ]),
+    height: PropTypes.oneOfType([PropTypes.number,PropTypes.string])
 }
 
 export default Container;
