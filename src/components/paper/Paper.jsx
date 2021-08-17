@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 //eslint-disable-next-line
-import { jsx, useTheme } from '@emotion/react'
+import { jsx, useTheme } from '@emotion/react';
 import PropTypes from 'prop-types';
 import * as styles from './paper.styles';
 

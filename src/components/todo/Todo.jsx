@@ -1,13 +1,15 @@
-import React from "react";
+/** @jsxImportSource @emotion/react */
+//eslint-disable-next-line
+import { jsx, useTheme } from '@emotion/react';
 import PropTypes from "prop-types";
-import styles from "./todo.module.css";
+import * as styles from "./todo.styles";
 
 const Todo = ({ text, completeTodo, isCompleted, index }) => {
+    const theme = useTheme();
     return (
-        <div className={ styles.todo } onClick={ () => completeTodo(index) }>
+        <div css={ styles.todo({theme}) } onClick={ () => completeTodo(index) }>
             <span 
-                className={ styles.todoText } 
-                style={{ textDecoration: isCompleted ? 'line-through' : 'initial' }}
+                css={ styles.todoText({ theme, isCompleted }) }
             >
                 {text}
             </span>
