@@ -6,7 +6,7 @@ import { jsx, useTheme } from '@emotion/react';
 import * as styles from "./todoform.styles";
 import Container from "../../layout/Container";
 import Item from "../../layout/Item";
-import Button from "../button/ButtonNoJSX";
+import Button from "../button/ButtonClass";
 
 const TodoForm = ({ addTodo,showAdd }) => {
     const [value, setValue] = useState("");

@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import Paper from '../components/paper/Paper';
+import Paper from '../components/paper/PaperClass';
 import Header from '../components/header/Header';
 import TodoForm from '../components/todoform/TodoForm';
 import Todos from '../components/todos/Todos';
