@@ -4,12 +4,12 @@ import { jsx, useTheme } from '@emotion/react';
 import PropTypes from "prop-types";
 import * as styles from "./button.styles";
 
-const Button = ({ text, onClick, color, align }) => {
+const Button = ({ text, onClick, color, align, padding }) => {
 
     const theme = useTheme();
 
     return ( 
-        <button css={styles.button({ align,color,theme })} onClick={ onClick } > 
+        <button css={styles.button({ align, color, theme , padding })} onClick={ onClick } > 
             { text } 
         </button>
     );
@@ -18,13 +18,15 @@ const Button = ({ text, onClick, color, align }) => {
 Button.defaultProps = {
     text: 'Button',
     color: 'black',
-    align: 'left'
+    align: 'left',
+    padding: '10px'
 }
 
 Button.propTypes =  {
     text: PropTypes.string.isRequired,
     onClick: PropTypes.func,
     color: PropTypes.oneOf(['black','red']),
-    align: PropTypes.oneOf(['left','right'])
+    align: PropTypes.oneOf(['left','right']),
+    padding: PropTypes.string
 }
 export default Button;

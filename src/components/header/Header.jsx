@@ -12,14 +12,14 @@ const Header = ({ showAddToggle,showAdd,clearTodos }) => {
     return (
         <section className="header-component" css={ styles.header }>
           <Container alignItems="flex-start">
-            <Item flex={ 1 }>
-              <Button text={ showAdd ? 'FINISH' : 'ADD' } onClick={ showAddToggle } />
+            <Item flex="1">
+              <Button text={ showAdd ? 'FINISH' : 'ADD' } onClick={ showAddToggle } padding="16px" />
             </Item>
-            <Item flex={ 2 }>
+            <Item flex="auto" >
               <h1 css={ styles.headerTitle(theme) }>Todo List</h1>
             </Item>
             <Item flex={ 1 } align="right">
-              <Button text="Clear" onClick={ clearTodos } color="red" align="right" />
+              <Button text="Clear" onClick={ clearTodos } color="red" align="right" padding="16px" />
             </Item>
           </Container>  
         </section>

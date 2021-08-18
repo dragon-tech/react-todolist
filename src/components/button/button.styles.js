@@ -1,6 +1,6 @@
 import { css }  from "@emotion/react";
 
-export const button = ({ color, align, theme }) => {
+export const button = ({ color, align, theme, padding }) => {
     let textColor;
     const {
         color: { primary }
@@ -20,10 +20,10 @@ export const button = ({ color, align, theme }) => {
     return css`
         font-size: 2rem;
         cursor: pointer;
-        color:${textColor};
+        color:${ textColor };
         font-family: "Fredoka One", sans-serif;
         text-transform: uppercase;
-        padding: 24px;
+        padding: ${ padding };
         background: unset;
         outline: unset;
         border: unset;
