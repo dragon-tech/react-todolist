@@ -3,7 +3,7 @@
 import { jsx, css } from '@emotion/react';
 import PropTypes from 'prop-types';
 
-const Container = ({ children, flexDirection, flexWrap, justifyContent, alignItems, alignContent, height }) => {
+const Container = ({ children, flexDirection, flexWrap, justifyContent, alignItems, alignContent, height, minHeight }) => {
     const containerStyles = css`
         display: flex;
         width:100%;
@@ -13,6 +13,7 @@ const Container = ({ children, flexDirection, flexWrap, justifyContent, alignIte
         justify-content: ${ justifyContent };
         align-items: ${ alignItems };
         align-content: ${ alignContent };
+        min-height: ${ minHeight };
     `;
     return (
         <div className="flex-container" css={ containerStyles }>{ children }</div>
@@ -25,7 +26,8 @@ Container.defaultProps = {
     justifyContent: "flex-start",
     alignItems: "stretch",
     alignContent: "stretch",
-    height:"auto"
+    height:"auto",
+    minHeight: "initial"
 }
 
 Container.propTypes = {
@@ -83,7 +85,8 @@ Container.propTypes = {
         "first baseline",
         "last baseline"
     ]),
-    height: PropTypes.oneOfType([PropTypes.number,PropTypes.string])
+    height: PropTypes.oneOfType([PropTypes.number,PropTypes.string]),
+    minHeight: PropTypes.string
 }
 
 export default Container;

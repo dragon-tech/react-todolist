@@ -1,16 +1,5 @@
 import { css } from "@emotion/react";
 
-// export const add = () =>
-//     css`
-//         padding:16px;
-//     `;
-
-// export const addForm = () =>
-//     css`
-//         display:flex;
-//         align-items: flex-start;
-//     `;
-
 export const addInput = ({ theme }) =>
     css`
         background: unset;

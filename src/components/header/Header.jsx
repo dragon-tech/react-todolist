@@ -10,7 +10,7 @@ import  Item  from '../../layout/Item';
 const Header = ({ showAddToggle,showAdd,clearTodos }) => {
     const theme = useTheme();
     return (
-        <section className="header-component" css={ styles.header }>
+        <section className="header-component" >
           <Container alignItems="flex-start">
             <Item flex="1">
               <Button text={ showAdd ? 'FINISH' : 'ADD' } onClick={ showAddToggle } padding="16px" />
