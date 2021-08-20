@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import { withTheme } from "@emotion/react";
 import Container from "../../layout/Container";
-import Item from "../../layout/Item";
+import Item from "../../layout/ItemClass";
 import Button from "../button/ButtonClass";
 
 const StyledInput = styled.input `

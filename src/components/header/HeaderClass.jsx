@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { withTheme } from "@emotion/react";
 import Button from "../button/ButtonClass";
 import  Container  from '../../layout/Container';
-import  Item  from '../../layout/Item';
+import  Item  from '../../layout/ItemClass';
 
 const StyledH1 = styled.h1`
     color: ${props => props.theme.color.primary.black};
