@@ -16,3 +16,10 @@ export const addBtnPlaceholderText = ({ theme }) =>
         font-weight: 600;
         color: ${theme.color.primary.black};
     `;
+
+export const seeAboutPagePagePlaceholderText = () =>
+    css`
+        font-family: "Fredoka One", sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+    `;

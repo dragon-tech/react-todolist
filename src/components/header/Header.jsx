@@ -6,7 +6,7 @@ import Button from '../button/ButtonClass';
 import * as styles from './header.styles';
 import  Container  from '../../layout/Container';
 import  Item  from '../../layout/Item';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Header = ({ showAddToggle,showAdd,clearTodos }) => {
     const theme = useTheme();
@@ -18,7 +18,6 @@ const Header = ({ showAddToggle,showAdd,clearTodos }) => {
             </Item>
             <Item flex="auto" >
               <h1 css={ styles.headerTitle(theme) }>Todo List</h1>
-              <Link to="/about">Ke halaman about</Link>
             </Item>
             <Item flex={ 1 } align="right">
               <Button text="Clear" onClick={ clearTodos } color="red" align="right" padding="16px" />
