@@ -3,7 +3,7 @@ import Paper from '../components/paper/PaperClass';
 import Header from '../components/header/HeaderClass';
 import TodoForm from '../components/todoform/TodoFormClass';
 import Todos from '../components/todos/Todos';
-import Container from '../layout/Container';
+import Container from '../layout/ContainerClass';
 
 class TodoList extends React.Component {
     state = {
